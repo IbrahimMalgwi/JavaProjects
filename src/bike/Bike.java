@@ -28,7 +28,6 @@ public class Bike {
 
     public void increaseSpeed() {
          if (isOn) accelerate();
-
     }
     private void accelerate(){
          if (gear == 4){
@@ -53,4 +52,35 @@ public class Bike {
         speed ++;
         if (speed > 20) gear ++;
     }
+
+
+    public void decelerate() {
+        if (gear == 1) decreaseGearToZeroWhenOnGearOne();
+        if (gear == 2) decreaseGearFromTwoToOne();
+        if (gear == 3) decreaseGearFromThreeToTwo();
+        if (gear == 4 ) decreaseGearFromFourToThree();
+
+    }
+
+    private void decreaseGearFromFourToThree(){
+        speed -= 4;
+        if (speed <= 40) gear --;
+    }
+
+    private void decreaseGearFromThreeToTwo(){
+         speed -=3;
+         if (speed <=30) gear --;
+    }
+
+    private void decreaseGearFromTwoToOne(){
+         speed -=2;
+         if (speed < 21) gear --;
+    }
+
+    private void decreaseGearToZeroWhenOnGearOne(){
+         speed --;
+         if (speed <21 );
+    }
+
+
 }

@@ -11,7 +11,6 @@ public class ArrayList implements List{
         isEmpty = false;
         elements[count] = item;
         count++;
-
     }
 
     @Override
@@ -53,8 +52,9 @@ public class ArrayList implements List{
     @Override
     public boolean contains(String anotherItem) {
         for (String element : elements){
-            if (element.equals(anotherItem));        }
-
+            if (element.equals(anotherItem))
+                return true;
+        }
         return false;
     }
 }

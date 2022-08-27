@@ -58,7 +58,6 @@ class ArrayListTest {
         assertEquals(1, list.size());
         String deleteItem = list.get(1);
         assertNull(deleteItem);
-
     }
 
     @Test
@@ -72,9 +71,12 @@ class ArrayListTest {
     }
 
     @Test
-    public void addXcontainsXrReturnTrueTest(){
+    public void addXContainsXrReturnTrueTest(){
         list.add("G-String");
         assertTrue(list.contains("G-String"));
     }
+
+
+
 
 }
