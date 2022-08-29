@@ -2,18 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b579a713-7788-4ba3-a0d7-d7d5c2c9ec60" name="Changes" comment="update">
-      <change afterPath="$PROJECT_DIR$/javaProjects/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javaProjects/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javaProjects/.idea/javaProjects.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javaProjects/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javaProjects/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javaProjects/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/television/Television.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/television/TelevisionTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/airconditioner/Ac.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/airconditioner/Ac.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/airconditioner/AcTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/airconditioner/AcTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -188,7 +177,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661325340240</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="update">
+      <created>1661766507058</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1661766507058</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
