@@ -2,19 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b579a713-7788-4ba3-a0d7-d7d5c2c9ec60" name="Changes" comment="update">
-      <change afterPath="$PROJECT_DIR$/.idea/git_toolbox_prj.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Question.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/airconditioner/Ac.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/chapterEight/TimeClass.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/hackerRank/Day9.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/MedianOfTwoSortedArray.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/Question1Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/airconditioner/AcTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaProjects/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaProjects/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaProjects/.idea/javaProjects.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaProjects/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaProjects/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaProjects/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/television/Television.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/television/TelevisionTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bike/Bike.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bike/Bike.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dataStructure/ArrayList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dataStructure/ArrayList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/bike/BikeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/bike/BikeTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/dataStructure/ArrayListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/dataStructure/ArrayListTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/airconditioner/Ac.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/airconditioner/Ac.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/airconditioner/AcTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/airconditioner/AcTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,6 +57,7 @@
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
     &quot;last_directory_selection&quot;: &quot;C:/Users/user/IdeaProjects/javaProjects/src/bike&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/user/IdeaProjects/java&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;advanced.settings&quot;
   }
 }</component>
@@ -69,84 +69,85 @@
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="television" />
       <recent name="airconditioner" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.AcTest.temperatureCannotBeAbove32Test">
-    <configuration name="AcTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.TelevisionTest">
+    <configuration name="TelevisionTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javaProjects" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="airconditioner.*" />
+          <option name="PATTERN" value="television.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="airconditioner" />
-      <option name="MAIN_CLASS_NAME" value="airconditioner.AcTest" />
+      <option name="PACKAGE_NAME" value="television" />
+      <option name="MAIN_CLASS_NAME" value="television.TelevisionTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AcTest.initialTemperatureIs16Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TelevisionTest.setChannelFrom0To100Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javaProjects" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="airconditioner.*" />
+          <option name="PATTERN" value="television.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="airconditioner" />
-      <option name="MAIN_CLASS_NAME" value="airconditioner.AcTest" />
-      <option name="METHOD_NAME" value="initialTemperatureIs16Test" />
+      <option name="PACKAGE_NAME" value="television" />
+      <option name="MAIN_CLASS_NAME" value="television.TelevisionTest" />
+      <option name="METHOD_NAME" value="setChannelFrom0To100Test" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AcTest.temperatureCanIncreaseTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TelevisionTest.setChannelTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javaProjects" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="airconditioner.*" />
+          <option name="PATTERN" value="television.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="airconditioner" />
-      <option name="MAIN_CLASS_NAME" value="airconditioner.AcTest" />
-      <option name="METHOD_NAME" value="temperatureCanIncreaseTest" />
+      <option name="PACKAGE_NAME" value="television" />
+      <option name="MAIN_CLASS_NAME" value="television.TelevisionTest" />
+      <option name="METHOD_NAME" value="setChannelTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AcTest.temperatureCanOnlyIncreaseWhenAcIsOnTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TelevisionTest.televisionChannelCannotGoBelow0Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javaProjects" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="airconditioner.*" />
+          <option name="PATTERN" value="television.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="airconditioner" />
-      <option name="MAIN_CLASS_NAME" value="airconditioner.AcTest" />
-      <option name="METHOD_NAME" value="temperatureCanOnlyIncreaseWhenAcIsOnTest" />
+      <option name="PACKAGE_NAME" value="television" />
+      <option name="MAIN_CLASS_NAME" value="television.TelevisionTest" />
+      <option name="METHOD_NAME" value="televisionChannelCannotGoBelow0Test" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AcTest.temperatureCannotBeAbove32Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TelevisionTest.televisionChannelCannotGoBelow1Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javaProjects" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="airconditioner.*" />
+          <option name="PATTERN" value="television.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="airconditioner" />
-      <option name="MAIN_CLASS_NAME" value="airconditioner.AcTest" />
-      <option name="METHOD_NAME" value="temperatureCannotBeAbove32Test" />
+      <option name="PACKAGE_NAME" value="television" />
+      <option name="MAIN_CLASS_NAME" value="television.TelevisionTest" />
+      <option name="METHOD_NAME" value="televisionChannelCannotGoBelow1Test" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -154,11 +155,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.AcTest.temperatureCannotBeAbove32Test" />
-        <item itemvalue="JUnit.AcTest.temperatureCanIncreaseTest" />
-        <item itemvalue="JUnit.AcTest.initialTemperatureIs16Test" />
-        <item itemvalue="JUnit.AcTest" />
-        <item itemvalue="JUnit.AcTest.temperatureCanOnlyIncreaseWhenAcIsOnTest" />
+        <item itemvalue="JUnit.TelevisionTest" />
+        <item itemvalue="JUnit.TelevisionTest.setChannelFrom0To100Test" />
+        <item itemvalue="JUnit.TelevisionTest.setChannelTest" />
+        <item itemvalue="JUnit.TelevisionTest.televisionChannelCannotGoBelow0Test" />
+        <item itemvalue="JUnit.TelevisionTest.televisionChannelCannotGoBelow1Test" />
       </list>
     </recent_temporary>
   </component>

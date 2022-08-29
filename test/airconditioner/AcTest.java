@@ -62,4 +62,27 @@ class AcTest {
         assertEquals(32, samsung.getTemperature());
     }
 
+    @Test
+    public void temperatureCanBeReducedTest(){
+        samsung.tunOn();
+        for (int i = 0; i < 14; i++){
+            samsung.increaseTemperature();
+        }
+        assertEquals(30, samsung.getTemperature());
+
+        samsung.decreaseTemperature();
+        assertEquals(29, samsung.getTemperature());
+    }
+
+    @Test
+    public void temperatureCanNotGoBellow16Test(){
+        samsung.tunOn();
+        samsung.increaseTemperature();
+        assertEquals(17, samsung.getTemperature());
+
+        samsung.decreaseTemperature();
+        samsung.decreaseTemperature();
+        assertEquals(16, samsung.getTemperature());
+    }
+
 }

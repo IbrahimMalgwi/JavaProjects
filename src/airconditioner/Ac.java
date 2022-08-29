@@ -26,4 +26,10 @@ public class Ac {
         }
     }
 
+    public void decreaseTemperature() {
+        if (isOn) {
+            if (temperature > 16 && temperature <32) temperature --;
+        }
+
+    }
 }
