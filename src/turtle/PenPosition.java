@@ -1,4 +1,4 @@
-package com.uncornWimps.arrays.turtle;
+package turtle;
 
 public enum PenPosition {
     UP, DOWN;

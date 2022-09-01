@@ -1,4 +1,4 @@
-package com.uncornWimps.arrays.turtle;
+package turtle;
 
 public class Pen {
     private PenPosition position;

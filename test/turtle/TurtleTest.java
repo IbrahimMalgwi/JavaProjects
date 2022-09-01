@@ -1,6 +1,4 @@
-package unicornwimps.arrays.turtle;
-import com.uncornWimps.arrays.turtle.PenPosition;
-import com.uncornWimps.arrays.turtle.Turtle;
+package turtle;
 import org.junit.jupiter.api.*;
 import static org.junit.jupiter.api.Assertions.*;
 
