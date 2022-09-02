@@ -7,89 +7,117 @@ import static org.junit.jupiter.api.Assertions.*;
 public class AccountTest {
 
     private Account bankeAccount;
+
     @BeforeEach
-    public void startWithThis(){
-        bankeAccount = new Account("1", "Banke Celina", "1234");
+    public void setUp(){
+        bankeAccount = new Account("1", "Banke Celina", "1212");
     }
 
     @Test
     public void accountCanBeCreatedTest(){
-        //given that account exists
+        //given that account exist
         //check that account exists
-        // Check that balance is zero
+        //Check that balance is zero
         assertNotNull(bankeAccount);
-        assertEquals(0, bankeAccount.getBalance("1234"));
+        assertEquals(0, bankeAccount.getBalance("1212"));
+
     }
 
     @Test
     public void depositMoney_balanceIncreasesTest(){
-        //given that I have account and balance is Zero:
-        // when I deposit 200
-        // check that balance is 200
-        assertEquals(0, bankeAccount.getBalance("1234"));
+
+        //given that i have account and balance is zero;
+        //when i deposit 200
+        //check that balance is 200
+
+        assertEquals(0, bankeAccount.getBalance("1212"));
         bankeAccount.deposit(200);
-        assertEquals(200, bankeAccount.getBalance("1234"));
+        int myBalance = bankeAccount.getBalance("1212");
+        assertEquals(200, myBalance);
+
     }
 
     @Test
-    public void cannotDepositNegativeAmountTest(){
-        //given I have an account and balance is Zero
-        // when I try to deposit -2500
-        // check that balance is Zero
-        assertEquals(0, bankeAccount.getBalance("1234"));
+    public void cannotDepositNegativeAmount(){
+        //given that i have an account
+        //when i try to deposit negative amount -2500
+        //check that balance is zero;
+
+
+        assertEquals(0, bankeAccount.getBalance("1212"));
         bankeAccount.deposit(-2500);
-        assertEquals(0, bankeAccount.getBalance("1234"));
-    }
+        assertEquals(0, bankeAccount.getBalance("1212"));
 
-    @Test
-    @DisplayName("Getting balance with invalid pin return Zero")
-    public void getBalanceWIthWrongPin_returnsZeroTest(){
-        //given that I have money in my account
-        // when I check balance
-        // balance is Zero
-        bankeAccount.deposit(2000);
-        int myBalance = bankeAccount.getBalance("1223");
-        assertEquals(0, myBalance);
     }
-
     @Test
-    @DisplayName("Getting balance with valid pin return real balance")
-    public void getBalanceWIthPinRightReturnsRealBalanceTest(){
-        //given that I have money in my account
-        // when I check balance
-        // balance real balance
+    @DisplayName("Getting balance with invalid pin returns ")
+    public void getBalanceWithWrongPin_returnsZeroTest(){
+        //given i have money in my account
+        //when i check my balance with wrong pin
+        //balance is zero
+
         bankeAccount.deposit(2000);
-        int myBalance = bankeAccount.getBalance("1234");
+        int myBalance = bankeAccount.getBalance("1212");
         assertEquals(2000, myBalance);
     }
 
     @Test
-    public void withdrawWithRightPinWorksTest() {
-        //Given that I have account and balance is 5000
-        // When I withdraw 2000 with 1234 as pin
-        //Check that current balance is 3000
-        bankeAccount.deposit(5000);
-        bankeAccount.withdraw(2000, "1234");
-        assertEquals(3000, bankeAccount.getBalance("1234"));
+    @DisplayName("Getting balance with invalid pin returns ")
+    public void getBalanceWithWrongPin_returnsZeroTestTwice(){
+        //given i have money in my account
+        //when i check my balance with wrong pin
+        //balance is zero
+
+        bankeAccount.deposit(2000);
+        int myBalance = bankeAccount.getBalance("1234");
+        assertEquals(0, myBalance);
     }
 
     @Test
-    public void withdrawWithWrongPinDoesNotWorkTest(){
-        //given that I have an account with money
-        // When I withdraw with wrong pin
-        // balance should not change
-        bankeAccount.deposit(5000);
-        bankeAccount.withdraw(2000,"2727");
-        assertEquals(5000, bankeAccount.getBalance("1234"));
+    @DisplayName("Withdraw amount that is greater than the balance in your account")
+    public void withdrawAmountThatIsGreaterThanBalance(){
+        //given you have account
+        //given you have money input the correct pin
+        //given you have money above balance
+
+        int myBal = bankeAccount.getBalance("1212");
+        assertEquals(0, myBal);
+        bankeAccount.deposit(12_000);
+        assertEquals(12_000, bankeAccount.getBalance("1212"));
+        bankeAccount.withdraw(-10_000, "1212");
+        assertEquals(12000, bankeAccount.getBalance("1212"));
+        bankeAccount.withdraw(10_000, "1212");
+        assertEquals(2000, bankeAccount.getBalance("1212"));
+
     }
 
+
     @Test
-    @DisplayName("If pin is correct and amount exceeds balance, Withdraw does not work")
-    public void withdrawWithRightPinAndHighAmountDoesNotWork(){
+    public void withdrawWrongPinDoesNotWork(){
+        bankeAccount.deposit(5000);
+        bankeAccount.withdraw(2000, "1223");
+        assertEquals(5000, bankeAccount.getBalance("1212"));
+    }
+    @Test
+    @DisplayName("If pin is correct ane amount exceeds balance, withdraw does not work")
+    public void withdrawWithRightPinAndHighAmountDoesNotWorkTest(){
         bankeAccount.deposit(5_000);
-        bankeAccount.withdraw(10_000, "1234");
-        assertEquals(5_000, bankeAccount.getBalance("1234"));
+        bankeAccount.withdraw(5000, "1212");
+        assertEquals(0, bankeAccount.getBalance("1212"));
+
     }
 
+    @Test
+    public void getBackBalanceIfUserWantToWithdrawAmountAboveBalance(){
+        bankeAccount.deposit(5_000);
+        bankeAccount.withdraw(10_000, "1212");
+        assertEquals(5000, bankeAccount.getBalance("1212"));
+    }
+    @Test
+    public void withdrawRightPinWorksTest(){
+        //given that i have account
+        //given when i try to withdraw 2000 with 1234 as pin
+        //check that current balance is 3000
+    }
 
 }

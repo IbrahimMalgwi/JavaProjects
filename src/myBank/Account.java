@@ -3,49 +3,56 @@ package myBank;
 import java.util.Objects;
 
 public class Account {
-
-    private int balance;
+    private String pin;
     private String number;
     private String name;
-    private String pin;
-    private int withdraw;
-    private int transfer;
+    private int balance;
 
-
-    public Account(String accountNumber, String accountName, String accountPin) {
+    public Account(){};
+    public Account(String accountNumber, String accountName, String accountPin){
         pin = accountPin;
         number = accountNumber;
         name = accountName;
     }
-
-    public int getBalance(String pin) {
-        if (isCorrectPin(pin)) return balance;
+    public int getBalance(String pin){
+        if(pin.equals(this.pin)) return balance;
         return 0;
     }
 
     public void deposit(int amount) {
-        boolean isValidAMount = amount > 0;
-        if (isValidAMount) balance = getBalance("1234") + amount;
+
+        boolean isValidAmount = amount > 0;
+        if(isValidAmount) balance = getBalance(pin) + amount;
     }
 
-    public void withdraw(int amount, String pin) {
-        if(pin.equals(this.pin)) {
-            this.balance = getBalance(pin) - amount;
-        }
-        else
-           getBalance("1234");
-//        return balance;
-    }
-
-    boolean isCorrectPin(String pin){
-        return pin.equals(this.pin);
+    public String getNumber() {
+        return number;
     }
 
     public String getName() {
         return name;
     }
 
-    public String getNumber() {
-        return number;
+    public int getBalance() {
+        return balance;
+    }
+
+    public void withdraw(int amount, String pin){
+        boolean amountIsValid = balance >= amount && amount > 0;
+        if(isCorrect(pin) && amountIsValid){
+            balance -= amount;
+        }
+    }
+    private boolean isCorrect(String pin){
+        return pin.equals(this.pin);
+    }
+
+    @Override
+    public String toString() {
+        return "Account{" +
+                "number='" + number + '\'' +
+                ", name='" + name + '\'' +
+                ", balance=" + balance +
+                '}';
     }
 }
