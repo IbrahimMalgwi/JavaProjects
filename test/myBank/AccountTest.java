@@ -47,8 +47,14 @@ public class AccountTest {
         assertEquals(0, bankeAccount.getBalance("1212"));
         bankeAccount.deposit(-2500);
         assertEquals(0, bankeAccount.getBalance("1212"));
-
     }
+
+    @Test
+    public void depositNegativeDepositThrowsExceptionTest(){
+        assertThrows(InvalidAmountException.class, ()->bankeAccount.deposit(-2500));
+    }
+
+
     @Test
     @DisplayName("Getting balance with invalid pin returns ")
     public void getBalanceWithWrongPin_returnsZeroTest(){

@@ -1,6 +1,6 @@
 package myBank;
 
-import java.util.Objects;
+//import java.util.Objects;
 
 public class Account {
     private String pin;
@@ -22,7 +22,8 @@ public class Account {
     public void deposit(int amount) {
 
         boolean isValidAmount = amount > 0;
-        if(isValidAmount) balance = getBalance(pin) + amount;
+        if (!isValidAmount) throw new InvalidAmountException("Cannot deposit negative amount");
+        balance = getBalance(pin) + amount;
     }
 
     public String getNumber() {
