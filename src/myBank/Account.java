@@ -20,7 +20,6 @@ public class Account {
     }
 
     public void deposit(int amount) {
-
         boolean isValidAmount = amount > 0;
         if (!isValidAmount) throw new InvalidAmountException("Cannot deposit negative amount");
         balance = getBalance(pin) + amount;
@@ -34,12 +33,10 @@ public class Account {
         return name;
     }
 
-    public int getBalance() {
-        return balance;
-    }
 
     public void withdraw(int amount, String pin){
         boolean amountIsValid = balance >= amount && amount > 0;
+//        if (!amountIsValid) throw new InvalidAmountException("Cannot withdraw negative amount");
         if(isCorrect(pin) && amountIsValid){
             balance -= amount;
         }

@@ -14,52 +14,46 @@ public class AccountTest {
     }
 
     @Test
-    public void accountCanBeCreatedTest(){
+    public void accountCanBeCreatedWIthZeroBalanceTest(){
         //given that account exist
         //check that account exists
         //Check that balance is zero
         assertNotNull(bankeAccount);
         assertEquals(0, bankeAccount.getBalance("1212"));
-
     }
 
     @Test
     public void depositMoney_balanceIncreasesTest(){
-
-        //given that i have account and balance is zero;
-        //when i deposit 200
+        //given that I have account and balance is zero;
+        //when I deposit 200
         //check that balance is 200
 
         assertEquals(0, bankeAccount.getBalance("1212"));
         bankeAccount.deposit(200);
         int myBalance = bankeAccount.getBalance("1212");
         assertEquals(200, myBalance);
-
     }
 
-    @Test
-    public void cannotDepositNegativeAmount(){
-        //given that i have an account
-        //when i try to deposit negative amount -2500
-        //check that balance is zero;
-
-
-        assertEquals(0, bankeAccount.getBalance("1212"));
-        bankeAccount.deposit(-2500);
-        assertEquals(0, bankeAccount.getBalance("1212"));
-    }
+//    @Test
+//    public void cannotDepositNegativeAmount(){
+//        //given that I have an account
+//        //when I try to deposit negative amount -2500
+//        //check that balance is zero;
+//        assertEquals(0, bankeAccount.getBalance("1212"));
+//        bankeAccount.deposit(-2500);
+//        assertEquals(0, bankeAccount.getBalance("1212"));
+//    }
 
     @Test
     public void depositNegativeDepositThrowsExceptionTest(){
         assertThrows(InvalidAmountException.class, ()->bankeAccount.deposit(-2500));
     }
 
-
     @Test
-    @DisplayName("Getting balance with invalid pin returns ")
-    public void getBalanceWithWrongPin_returnsZeroTest(){
-        //given i have money in my account
-        //when i check my balance with wrong pin
+    @DisplayName("Getting balance with valid pin returns ")
+    public void getBalanceWithPin_returnsBalanceTest(){
+        //given I have money in my account
+        //when I check my balance with wrong pin
         //balance is zero
 
         bankeAccount.deposit(2000);
@@ -70,14 +64,30 @@ public class AccountTest {
     @Test
     @DisplayName("Getting balance with invalid pin returns ")
     public void getBalanceWithWrongPin_returnsZeroTestTwice(){
-        //given i have money in my account
-        //when i check my balance with wrong pin
+        //given I have money in my account
+        //when I check my balance with wrong pin
         //balance is zero
 
         bankeAccount.deposit(2000);
         int myBalance = bankeAccount.getBalance("1234");
         assertEquals(0, myBalance);
     }
+
+    @Test
+    public void withdrawRightPinWorksTest(){
+        //given that I have account
+        //given when I try to withdraw 2000 with 1234 as pin
+        //check that current balance is 3000
+
+        bankeAccount.deposit(5_000);
+        assertEquals(5_000, bankeAccount.getBalance("1212"));
+        bankeAccount.withdraw(2_000, "1212");
+    }
+
+//    @Test
+//    public void withdrawWithNegativeAmountThrowExceptionTest(){
+//        assertThrows(InvalidAmountException.class, ()->bankeAccount.withdraw(-10_200, "1212"));
+//    }
 
     @Test
     @DisplayName("Withdraw amount that is greater than the balance in your account")
@@ -94,9 +104,7 @@ public class AccountTest {
         assertEquals(12000, bankeAccount.getBalance("1212"));
         bankeAccount.withdraw(10_000, "1212");
         assertEquals(2000, bankeAccount.getBalance("1212"));
-
     }
-
 
     @Test
     public void withdrawWrongPinDoesNotWork(){
@@ -105,12 +113,11 @@ public class AccountTest {
         assertEquals(5000, bankeAccount.getBalance("1212"));
     }
     @Test
-    @DisplayName("If pin is correct ane amount exceeds balance, withdraw does not work")
+    @DisplayName("If pin is correct and amount exceeds balance, withdraw does not work")
     public void withdrawWithRightPinAndHighAmountDoesNotWorkTest(){
         bankeAccount.deposit(5_000);
         bankeAccount.withdraw(5000, "1212");
         assertEquals(0, bankeAccount.getBalance("1212"));
-
     }
 
     @Test
@@ -119,11 +126,4 @@ public class AccountTest {
         bankeAccount.withdraw(10_000, "1212");
         assertEquals(5000, bankeAccount.getBalance("1212"));
     }
-    @Test
-    public void withdrawRightPinWorksTest(){
-        //given that i have account
-        //given when i try to withdraw 2000 with 1234 as pin
-        //check that current balance is 3000
-    }
-
 }
