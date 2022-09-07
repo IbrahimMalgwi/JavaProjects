@@ -2,15 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b579a713-7788-4ba3-a0d7-d7d5c2c9ec60" name="Changes" comment="update to codes">
-      <change afterPath="$PROJECT_DIR$/src/hackerRank/Palindrome.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/hackerRank/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/hackerRank/Sorting.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/javaoopconcept/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fairTax/FairTaxCalculator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fairTax/FairTaxException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fairTax/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fairTax/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/polling/Poll.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/fairTax/FairTaxCalculatorTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/polling/PollTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/myBank/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/myBank/Account.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/myBank/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/myBank/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/myBank/AccountTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/myBank/AccountTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/myBank/BankTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/myBank/BankTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,8 +19,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JUnit5 Test Class" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -56,7 +55,7 @@
     &quot;last_opened_file_path&quot;: &quot;C:/Users/user/IdeaProjects/java&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;advanced.settings&quot;
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -69,17 +68,19 @@
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="polling" />
+      <recent name="fairTax" />
       <recent name="television" />
       <recent name="airconditioner" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Student">
-    <configuration name="Student" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="javaoopconcept.Student" />
+  <component name="RunManager" selected="JUnit.PollTest">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="fairTax.Main" />
       <module name="javaProjects" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="javaoopconcept.*" />
+          <option name="PATTERN" value="fairTax.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -87,64 +88,64 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AccountTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PollTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javaProjects" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="myBank.*" />
+          <option name="PATTERN" value="polling.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="myBank" />
-      <option name="MAIN_CLASS_NAME" value="myBank.AccountTest" />
+      <option name="PACKAGE_NAME" value="polling" />
+      <option name="MAIN_CLASS_NAME" value="polling.PollTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AccountTest.cannotDepositNegativeAmount" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PollTest.calculateAverageTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javaProjects" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="myBank.*" />
+          <option name="PATTERN" value="polling.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="myBank" />
-      <option name="MAIN_CLASS_NAME" value="myBank.AccountTest" />
-      <option name="METHOD_NAME" value="cannotDepositNegativeAmount" />
+      <option name="PACKAGE_NAME" value="polling" />
+      <option name="MAIN_CLASS_NAME" value="polling.PollTest" />
+      <option name="METHOD_NAME" value="calculateAverageTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AccountTest.withdrawAmountThatIsGreaterThanBalance" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PollTest.calculateHighestPointsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javaProjects" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="myBank.*" />
+          <option name="PATTERN" value="polling.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="myBank" />
-      <option name="MAIN_CLASS_NAME" value="myBank.AccountTest" />
-      <option name="METHOD_NAME" value="withdrawAmountThatIsGreaterThanBalance" />
+      <option name="PACKAGE_NAME" value="polling" />
+      <option name="MAIN_CLASS_NAME" value="polling.PollTest" />
+      <option name="METHOD_NAME" value="calculateHighestPointsTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AccountTest.withdrawRightPinWorksTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PollTest.calculateLowestPointTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javaProjects" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="myBank.*" />
+          <option name="PATTERN" value="polling.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="myBank" />
-      <option name="MAIN_CLASS_NAME" value="myBank.AccountTest" />
-      <option name="METHOD_NAME" value="withdrawRightPinWorksTest" />
+      <option name="PACKAGE_NAME" value="polling" />
+      <option name="MAIN_CLASS_NAME" value="polling.PollTest" />
+      <option name="METHOD_NAME" value="calculateLowestPointTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -152,11 +153,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Student" />
-        <item itemvalue="JUnit.AccountTest" />
-        <item itemvalue="JUnit.AccountTest.withdrawAmountThatIsGreaterThanBalance" />
-        <item itemvalue="JUnit.AccountTest.cannotDepositNegativeAmount" />
-        <item itemvalue="JUnit.AccountTest.withdrawRightPinWorksTest" />
+        <item itemvalue="JUnit.PollTest" />
+        <item itemvalue="JUnit.PollTest.calculateLowestPointTest" />
+        <item itemvalue="JUnit.PollTest.calculateHighestPointsTest" />
+        <item itemvalue="JUnit.PollTest.calculateAverageTest" />
+        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -182,7 +183,8 @@
       <workItem from="1662127680280" duration="4975000" />
       <workItem from="1662146004026" duration="11771000" />
       <workItem from="1662237997647" duration="1567000" />
-      <workItem from="1662323427555" duration="7172000" />
+      <workItem from="1662323427555" duration="25997000" />
+      <workItem from="1662481168546" duration="2008000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1661325340240</created>
@@ -212,7 +214,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662189280996</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="update to codes">
+      <created>1662392633329</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1662392633329</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
