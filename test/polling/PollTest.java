@@ -18,9 +18,9 @@ class PollTest {
 //        Given that
         int[] pollNumbers = {10, 20, 30, 40, 50};
 //        When
-        double average = poll.calculateAverage(pollNumbers);
+        poll.calculateAverage(pollNumbers);
 //        Check
-        assertEquals(30, average);
+        assertEquals(30, poll.getAverageRatings());
     }
 
     @Test

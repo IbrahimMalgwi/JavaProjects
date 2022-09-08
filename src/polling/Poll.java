@@ -1,20 +1,33 @@
 package polling;
 
 public class Poll {
-    private String[] topics =
-            {"Financial", "Psychological issues", "Gender Issues", "Hunger", "Breakfast"};
-
+    private String[] topics = {"Financial", "Psychological issues", "Gender Issues", "Hunger", "Breakfast"};
     private int[][] responses = new int[5][10];
+    private double averageRatings;
 
+    public int[][] getResponses() {
+        return responses;
+    }
 
-    public double calculateAverage(int... pollNumbers) {
+    public void setResponses(int[][] responses) {
+        this.responses = responses;
+    }
+
+    public double getAverageRatings() {
+        return averageRatings;
+    }
+
+    public void setAverageRatings(double averageRatings) {
+        this.averageRatings = averageRatings;
+    }
+
+    public void calculateAverage(int... pollNumbers) {
         int totalOfRating= 0;
         for (int pollNUmber : pollNumbers) {
             totalOfRating+= pollNUmber;
 
         }
-        double average = totalOfRating / pollNumbers.length;
-        return average;
+        averageRatings = totalOfRating / pollNumbers.length;
     }
 
     public int getHighestPoint(int... pollNumbers) {
