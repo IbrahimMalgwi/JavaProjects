@@ -34,15 +34,14 @@ public class AccountTest {
         assertEquals(200, myBalance);
     }
 
-//    @Test
-//    public void cannotDepositNegativeAmount(){
-//        //given that I have an account
-//        //when I try to deposit negative amount -2500
-//        //check that balance is zero;
-//        assertEquals(0, bankeAccount.getBalance("1212"));
-//        bankeAccount.deposit(-2500);
-//        assertEquals(0, bankeAccount.getBalance("1212"));
-//    }
+    @Test
+    public void cannotDepositNegativeAmount(){
+        //given that I have an account
+        //when I try to deposit negative amount -2500
+        //check that balance is zero;
+        assertEquals(0, bankeAccount.getBalance("1212"));
+        assertThrows(InvalidAmountException.class, ()->bankeAccount.deposit(-2500));
+    }
 
     @Test
     public void depositNegativeDepositThrowsExceptionTest(){

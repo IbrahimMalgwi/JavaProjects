@@ -12,8 +12,8 @@ public class Main {
 
         System.out.println("Welcome to Unicorn's pools");
 
-        var response = "";
-        while (response.equals("no")){
+        var response = "yes";
+        while (response.equals("yes")){
             for (int index = 0; index <numberOfTopics ; index++) {
                 System.out.println("Rate this Issues between 1 to 10 " + topics[index]);
                 int userRating = input.nextInt();
@@ -33,9 +33,7 @@ public class Main {
         for (int index = 0; index < responseDb.length; index++) {
             for (int secondIndex = 0; secondIndex <responseDb[index].length ; secondIndex++) {
                 responseDb[issueNumber][userRating] = responseDb[issueNumber][userRating]+1;
-
             }
-
         }
     }
 }

@@ -2,6 +2,10 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Full-Stack-Web-Development-With-Flask" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/JavaDesktopSudoku" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/automation" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/hangManGame" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/javaProjects" vcs="Git" />
   </component>
 </project>

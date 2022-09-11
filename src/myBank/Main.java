@@ -35,7 +35,7 @@ public class Main {
 
     private static void checkBalance(){
         String accountName = input("Enter your account name");
-        String pin = input("Enter your desired pin");
+        String pin = input("Enter Your PIN");
         display(String.format("Balance is %s", malgwiBank.findAccount(accountName).getBalance(pin)));
         startBank();
     }
@@ -46,7 +46,6 @@ public class Main {
         display(String.format("Account created for %s", accountName));
         startBank();
     }
-
 
     private static void transfer(){}
 
