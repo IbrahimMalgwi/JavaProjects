@@ -35,7 +35,7 @@ public class BankTest {
 
     @Test
     public  void customerCanDepositInAccountTest(){
-        malgwiBank.createAccountFor("Bank Celina Owoloba", "2727");
+        malgwiBank.createAccountFor("Bank Celina Owolabi", "2727");
         malgwiBank.deposit(2_000, "1");
 
         Account bankeAccount = malgwiBank.findAccount("1");
@@ -44,7 +44,7 @@ public class BankTest {
 
     @Test
     public void withdrawPositiveAmountFromAccount(){
-        malgwiBank.createAccountFor("Bank Celina Owoloba", "2727");
+        malgwiBank.createAccountFor("Bank Celina Owolabi", "2727");
         malgwiBank.deposit(2_000, "1");
 
         Account bankeAccount = malgwiBank.withdraw(1000, "1", "2727");
@@ -52,11 +52,14 @@ public class BankTest {
     }
     @Test
     public void withdrawNegativeAmountFromAccount(){
-        malgwiBank.createAccountFor("Bank Celina Owoloba", "2727");
+        malgwiBank.createAccountFor("Bank Celina Owolabi", "2727");
         malgwiBank.deposit(2_000, "1");
+//        assertEquals(2_000,);
 
-        Account bankeAccount = malgwiBank.withdraw(-1000, "1", "2727");
-        assertEquals(2000, bankeAccount.getBalance("2727"));
+        assertThrows(InvalidAmountException.class, ()->malgwiBank.withdraw(-1_000, "1", "2727"));
+
+//        Account bankeAccount = malgwiBank.withdraw(-1000, "1", "2727");
+//        assertEquals(2000, bankeAccount.getBalance("2727"));
     }
 
     @Test
@@ -78,7 +81,4 @@ public class BankTest {
 
 
     }
-
-
-
 }

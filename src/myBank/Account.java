@@ -15,8 +15,8 @@ public class Account {
         name = accountName;
     }
     public int getBalance(String pin){
-        if(pin.equals(this.pin)) return balance;
-        return 0;
+        if(!pin.equals(this.pin)) throw new InvalidPinException("Invalid PIN");
+        return balance;
     }
 
     public void deposit(int amount) {
@@ -36,13 +36,16 @@ public class Account {
 
     public void withdraw(int amount, String pin){
         boolean amountIsValid = balance >= amount && amount > 0;
-//        if (!amountIsValid) throw new InvalidAmountException("Cannot withdraw negative amount");
+        if (amount > balance) throw new InsufficientFundException("You cannot Withdraw above your balance");
+        if (!amountIsValid) throw new InvalidAmountException("Cannot withdraw negative amount");
+        else if (!isCorrect(pin)) throw new InvalidPinException("Invalid PIN");
         if(isCorrect(pin) && amountIsValid){
             balance -= amount;
         }
     }
     private boolean isCorrect(String pin){
-        return pin.equals(this.pin);
+        if (!pin.equals(this.pin)) throw new InvalidPinException("Invalid PIN");
+        return true;
     }
 
     @Override

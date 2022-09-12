@@ -33,23 +33,12 @@ public class Main {
         }
     }
 
-    private static void checkBalance(){
-        String accountName = input("Enter your account name");
-        String pin = input("Enter Your PIN");
-        display(String.format("Balance is %s", malgwiBank.findAccount(accountName).getBalance(pin)));
-        startBank();
-    }
     private static void createAccount() {
         String accountName = input("Enter your account name");
         String pin = input("Enter your desired pin");
         malgwiBank.createAccountFor(accountName, pin);
-        display(String.format("Account created for %s", accountName));
+        display(String.format("Account created for %s%n", accountName));
         startBank();
-    }
-
-    private static void transfer(){}
-
-    private static void withdraw() {
     }
 
     private static void deposit() {
@@ -57,10 +46,47 @@ public class Main {
         int amount = inputInt("Enter amount");
         try {
             malgwiBank.deposit(amount, accountNumber);
+            display(String.format("Your have successfully deposited %d", amount));
         }
         catch (InvalidAmountException ex){
             display(ex.getMessage());
             deposit();
+        }
+        startBank();
+    }
+
+    private static void withdraw() {
+        int amount = inputInt("Enter Amount to withdraw: ");
+        String accountNumber = input("Enter Your Account Number");
+        String pin = input("Enter Your Pin: ");
+        try {
+            malgwiBank.withdraw(amount, accountNumber, pin);
+            display(String.format("You have successfully withdrawn %d", amount));
+        }catch (InvalidAmountException | InsufficientFundException ex) {
+            display(ex.getMessage());
+            withdraw();
+        }
+        startBank();
+    }
+
+    private static void transfer(){
+        String senderAccount = input("Enter account to transfer from: ");
+        String receiverAccount = input(" Enter account to receive payment: ");
+        int amount = inputInt("Enter amount to transfer: ");
+        String pin = input("Enter Your Pin: ");
+        malgwiBank.transfer(senderAccount, receiverAccount, amount, pin);
+        display(String.format("You have successfully transferred %d to account %s", amount, receiverAccount));
+        startBank();
+    }
+
+    private static void checkBalance(){
+        String accountNumber = input("Enter your account number: ");
+        String pin = input("Enter Your PIN");
+        try {
+            var balance = malgwiBank.findAccount(accountNumber).getBalance(pin);
+            display(String.format("Your balance is %d", balance));
+        } catch (InvalidPinException ex){
+            display(ex.getMessage());
         }
         startBank();
     }
