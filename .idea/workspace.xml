@@ -2,19 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b579a713-7788-4ba3-a0d7-d7d5c2c9ec60" name="Changes" comment="update to codes">
-      <change afterPath="$PROJECT_DIR$/src/hackerRank/Day2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/hackerRank/Day3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/hackerRank/Day4.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/hackerRank/Day5.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/hackerRank/Day6.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/myBank/InsufficientFundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/myBank/InvalidPinException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hackerRank/Testing.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/AddTwoNumbers.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/myBank/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/myBank/Account.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/myBank/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/myBank/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/myBank/AccountTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/myBank/AccountTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/myBank/BankTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/myBank/BankTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,27 +32,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "Downloaded.Files.Path.Enabled": "false",
-    "Project.color": "312204",
-    "Repository.Attach.Annotations": "true",
-    "Repository.Attach.JavaDocs": "true",
-    "Repository.Attach.Sources": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "last_directory_selection": "C:/Users/user/IdeaProjects/javaProjects/src/bike",
-    "last_opened_file_path": "C:/Users/user/IdeaProjects/java",
-    "nodejs_package_manager_path": "npm",
-    "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Project.color&quot;: &quot;312204&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;true&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;true&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;last_directory_selection&quot;: &quot;C:/Users/user/IdeaProjects/javaProjects/src/bike&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/user/IdeaProjects/javaProjects&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="hackerRank" />
@@ -80,33 +69,16 @@
       <recent name="airconditioner" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.BankTest.withdrawPositiveAmountFromAccount">
-    <configuration name="AccountTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.BikeTest">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="compensationalModel.Main" />
       <module name="javaProjects" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="myBank.*" />
+          <option name="PATTERN" value="compensationalModel.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="myBank" />
-      <option name="MAIN_CLASS_NAME" value="myBank.AccountTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BankTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="javaProjects" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="myBank.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="myBank" />
-      <option name="MAIN_CLASS_NAME" value="myBank.BankTest" />
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -159,13 +131,28 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="BikeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="javaProjects" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="bike.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="bike" />
+      <option name="MAIN_CLASS_NAME" value="bike.BikeTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.BikeTest" />
+        <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.BankTest.withdrawPositiveAmountFromAccount" />
         <item itemvalue="JUnit.BankTest.withdrawNegativeAmountFromAccount" />
         <item itemvalue="JUnit.BankTest.bankCanTransfer" />
-        <item itemvalue="JUnit.BankTest" />
-        <item itemvalue="JUnit.AccountTest" />
       </list>
     </recent_temporary>
   </component>
@@ -205,7 +192,16 @@
       <workItem from="1662881006068" duration="781000" />
       <workItem from="1662882733738" duration="1217000" />
       <workItem from="1662890428836" duration="2548000" />
-      <workItem from="1662900027772" duration="15887000" />
+      <workItem from="1662900027772" duration="16804000" />
+      <workItem from="1662980742304" duration="97000" />
+      <workItem from="1663169019046" duration="651000" />
+      <workItem from="1663208453853" duration="98000" />
+      <workItem from="1663208634277" duration="2718000" />
+      <workItem from="1663229538967" duration="1274000" />
+      <workItem from="1663245363622" duration="1142000" />
+      <workItem from="1663296834860" duration="765000" />
+      <workItem from="1663329239651" duration="1590000" />
+      <workItem from="1663352986958" duration="348000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1661325340240</created>
@@ -270,7 +266,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662920015495</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="update to codes">
+      <created>1662978126944</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1662978126944</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
