@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b579a713-7788-4ba3-a0d7-d7d5c2c9ec60" name="Changes" comment="update to codes">
-      <change afterPath="$PROJECT_DIR$/src/hackerRank/Testing.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/myBank/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/myBank/Account.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/myBank/AccountTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/myBank/AccountTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/myBank/BankTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/myBank/BankTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +71,7 @@
       <recent name="airconditioner" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.BikeTest">
+  <component name="RunManager" selected="JUnit.AccountTest">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="compensationalModel.Main" />
       <module name="javaProjects" />
@@ -83,7 +85,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BankTest.bankCanTransfer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AccountTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="javaProjects" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="myBank.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="myBank" />
+      <option name="MAIN_CLASS_NAME" value="myBank.AccountTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BankTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javaProjects" />
       <extension name="coverage">
         <pattern>
@@ -93,8 +110,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="myBank" />
       <option name="MAIN_CLASS_NAME" value="myBank.BankTest" />
-      <option name="METHOD_NAME" value="bankCanTransfer" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -110,22 +126,6 @@
       <option name="PACKAGE_NAME" value="myBank" />
       <option name="MAIN_CLASS_NAME" value="myBank.BankTest" />
       <option name="METHOD_NAME" value="withdrawNegativeAmountFromAccount" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BankTest.withdrawPositiveAmountFromAccount" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="javaProjects" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="myBank.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="myBank" />
-      <option name="MAIN_CLASS_NAME" value="myBank.BankTest" />
-      <option name="METHOD_NAME" value="withdrawPositiveAmountFromAccount" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -148,11 +148,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.AccountTest" />
+        <item itemvalue="JUnit.BankTest" />
+        <item itemvalue="JUnit.BankTest.withdrawNegativeAmountFromAccount" />
         <item itemvalue="JUnit.BikeTest" />
         <item itemvalue="Application.Main" />
-        <item itemvalue="JUnit.BankTest.withdrawPositiveAmountFromAccount" />
-        <item itemvalue="JUnit.BankTest.withdrawNegativeAmountFromAccount" />
-        <item itemvalue="JUnit.BankTest.bankCanTransfer" />
       </list>
     </recent_temporary>
   </component>
@@ -201,7 +201,8 @@
       <workItem from="1663245363622" duration="1142000" />
       <workItem from="1663296834860" duration="765000" />
       <workItem from="1663329239651" duration="1590000" />
-      <workItem from="1663352986958" duration="348000" />
+      <workItem from="1663352986958" duration="3139000" />
+      <workItem from="1663441426644" duration="1340000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1661325340240</created>
@@ -273,7 +274,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662978126944</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="update to codes">
+      <created>1663353453796</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1663353453796</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

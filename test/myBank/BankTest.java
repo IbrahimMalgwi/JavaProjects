@@ -50,17 +50,6 @@ public class BankTest {
         Account bankeAccount = malgwiBank.withdraw(1000, "1", "2727");
         assertEquals(1000, bankeAccount.getBalance("2727"));
     }
-    @Test
-    public void withdrawNegativeAmountFromAccount(){
-        malgwiBank.createAccountFor("Bank Celina Owolabi", "2727");
-        malgwiBank.deposit(2_000, "1");
-//        assertEquals(2_000,);
-
-        assertThrows(InvalidAmountException.class, ()->malgwiBank.withdraw(-1_000, "1", "2727"));
-
-//        Account bankeAccount = malgwiBank.withdraw(-1000, "1", "2727");
-//        assertEquals(2000, bankeAccount.getBalance("2727"));
-    }
 
     @Test
     public void bankCanTransfer(){
