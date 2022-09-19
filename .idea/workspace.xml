@@ -2,15 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b579a713-7788-4ba3-a0d7-d7d5c2c9ec60" name="Changes" comment="update to codes">
-      <change afterPath="$PROJECT_DIR$/person" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/creditCardValidator/CreditCardLengthException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/creditCardValidator/InvalidCreditCardNumberException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fileIO/JavaNioSample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/serialization/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/serialization/Person.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/creditCardValidator/CreditCardValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/creditCardValidator/CreditCard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/creditCardValidator/CreditCardValidatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/creditCardValidator/CreditCardTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/creditCardValidator/CreditCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/creditCardValidator/CreditCard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/creditCardValidator/CreditCardTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/creditCardValidator/CreditCardTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,38 +75,7 @@
       <recent name="television" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CreditCardTest.trowExceptionForInvalidCardNumberLengthTest">
-    <configuration name="CreditCardTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="javaProjects" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="creditCardValidator.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="creditCardValidator" />
-      <option name="MAIN_CLASS_NAME" value="creditCardValidator.CreditCardTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CreditCardTest.creditCardIsValidTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="javaProjects" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="creditCardValidator.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="creditCardValidator" />
-      <option name="MAIN_CLASS_NAME" value="creditCardValidator.CreditCardTest" />
-      <option name="METHOD_NAME" value="creditCardIsValidTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.CreditCardTest.sumOfOddPlaceDigitTest">
     <configuration name="CreditCardTest.creditCardNumberIsAValidTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javaProjects" />
       <extension name="coverage">
@@ -129,7 +92,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CreditCardTest.creditCardNumberIsValidTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CreditCardTest.sumOfDoubleEvenDigitTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javaProjects" />
       <extension name="coverage">
         <pattern>
@@ -139,7 +102,23 @@
       </extension>
       <option name="PACKAGE_NAME" value="creditCardValidator" />
       <option name="MAIN_CLASS_NAME" value="creditCardValidator.CreditCardTest" />
-      <option name="METHOD_NAME" value="creditCardNumberIsValidTest" />
+      <option name="METHOD_NAME" value="sumOfDoubleEvenDigitTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CreditCardTest.sumOfOddPlaceDigitTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="javaProjects" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="creditCardValidator.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="creditCardValidator" />
+      <option name="MAIN_CLASS_NAME" value="creditCardValidator.CreditCardTest" />
+      <option name="METHOD_NAME" value="sumOfOddPlaceDigitTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -161,13 +140,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="CreditCardTest.trowInvalidCreditCardNumberExceptionTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="javaProjects" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="creditCardValidator.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="creditCardValidator" />
+      <option name="MAIN_CLASS_NAME" value="creditCardValidator.CreditCardTest" />
+      <option name="METHOD_NAME" value="trowInvalidCreditCardNumberExceptionTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CreditCardTest.sumOfOddPlaceDigitTest" />
+        <item itemvalue="JUnit.CreditCardTest.sumOfDoubleEvenDigitTest" />
+        <item itemvalue="JUnit.CreditCardTest.trowInvalidCreditCardNumberExceptionTest" />
         <item itemvalue="JUnit.CreditCardTest.trowExceptionForInvalidCardNumberLengthTest" />
         <item itemvalue="JUnit.CreditCardTest.creditCardNumberIsAValidTest" />
-        <item itemvalue="JUnit.CreditCardTest.creditCardNumberIsValidTest" />
-        <item itemvalue="JUnit.CreditCardTest" />
-        <item itemvalue="JUnit.CreditCardTest.creditCardIsValidTest" />
       </list>
     </recent_temporary>
   </component>
@@ -225,7 +220,7 @@
       <workItem from="1663586541421" duration="703000" />
       <workItem from="1663588344324" duration="1000" />
       <workItem from="1663588374630" duration="12157000" />
-      <workItem from="1663622240450" duration="3192000" />
+      <workItem from="1663622240450" duration="5429000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1661325340240</created>
@@ -318,7 +313,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663598656885</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="update to codes">
+      <created>1663625468437</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1663625468437</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

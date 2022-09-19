@@ -4,8 +4,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.assertThrows;
-import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.junit.jupiter.api.Assertions.*;
 
 class CreditCardTest {
 //    private CreditCard creditCard;
@@ -44,6 +43,20 @@ class CreditCardTest {
 
         boolean isValidNumber3 = CreditCard.isValidNumber("3745234567892536");
         assertTrue(isValidNumber3);
+    }
+
+    @Test
+    @DisplayName("Double Every Second Digit From Right To Left to get a single digit," +
+            "if result is double digit add the two digit to get a single digit")
+    void sumOfDoubleEvenDigitTest(){
+        String cardNumber = "4388576018402626";
+        assertEquals(37, CreditCard.sumOfDoubleEvenDigit(cardNumber));
+    }
+
+    @Test
+    void sumOfOddPlaceDigitTest(){
+        String cardNumber = "4388576018402626";
+        assertEquals(38, CreditCard.sumOfOddPlaceDigit(cardNumber));
     }
 
 
