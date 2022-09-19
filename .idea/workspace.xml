@@ -2,10 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b579a713-7788-4ba3-a0d7-d7d5c2c9ec60" name="Changes" comment="update to codes">
+      <change afterPath="$PROJECT_DIR$/cars.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/TicTacToe.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/creditCardValidator/CreditCardValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fileIO/FileOutputStreamSample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fileIO/FileWriterSample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fileIO/PrintStreamSample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ticTacToe/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ticTacToe/TicTacToe.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ticTacToeGame/TicTacToeGame.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/creditCardValidator/CreditCardValidatorTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/ticTacToeGame/TicTacToeGameTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/myBank/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/myBank/Account.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/myBank/AccountTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/myBank/AccountTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/myBank/BankTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/myBank/BankTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +57,7 @@
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
-    &quot;last_directory_selection&quot;: &quot;C:/Users/user/IdeaProjects/javaProjects/src/bike&quot;,
+    &quot;last_directory_selection&quot;: &quot;C:/Users/user/IdeaProjects/javaProjects/src/ticTacToe&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/user/IdeaProjects/javaProjects&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
@@ -64,20 +73,50 @@
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="ticTacToe" />
+    </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="creditCardValidator" />
+      <recent name="ticTacToeGame" />
       <recent name="polling" />
       <recent name="fairTax" />
       <recent name="television" />
-      <recent name="airconditioner" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.AccountTest">
+  <component name="RunManager" selected="Application.FileWriterSample">
+    <configuration name="FileOutputStreamSample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="fileIO.FileOutputStreamSample" />
+      <module name="javaProjects" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="fileIO.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FileWriterSample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="fileIO.FileWriterSample" />
+      <module name="javaProjects" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="fileIO.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="compensationalModel.Main" />
+      <option name="MAIN_CLASS_NAME" value="ticTacToe.Main" />
       <module name="javaProjects" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="compensationalModel.*" />
+          <option name="PATTERN" value="ticTacToe.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -85,74 +124,33 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AccountTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PrintStreamSample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="fileIO.PrintStreamSample" />
       <module name="javaProjects" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="myBank.*" />
+          <option name="PATTERN" value="fileIO.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="myBank" />
-      <option name="MAIN_CLASS_NAME" value="myBank.AccountTest" />
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BankTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TicTT" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="TicTT" />
       <module name="javaProjects" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="myBank.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="myBank" />
-      <option name="MAIN_CLASS_NAME" value="myBank.BankTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BankTest.withdrawNegativeAmountFromAccount" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="javaProjects" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="myBank.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="myBank" />
-      <option name="MAIN_CLASS_NAME" value="myBank.BankTest" />
-      <option name="METHOD_NAME" value="withdrawNegativeAmountFromAccount" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BikeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="javaProjects" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="bike.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="bike" />
-      <option name="MAIN_CLASS_NAME" value="bike.BikeTest" />
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.AccountTest" />
-        <item itemvalue="JUnit.BankTest" />
-        <item itemvalue="JUnit.BankTest.withdrawNegativeAmountFromAccount" />
-        <item itemvalue="JUnit.BikeTest" />
+        <item itemvalue="Application.FileWriterSample" />
+        <item itemvalue="Application.PrintStreamSample" />
+        <item itemvalue="Application.FileOutputStreamSample" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="Application.TicTT" />
       </list>
     </recent_temporary>
   </component>
@@ -202,7 +200,14 @@
       <workItem from="1663296834860" duration="765000" />
       <workItem from="1663329239651" duration="1590000" />
       <workItem from="1663352986958" duration="3139000" />
-      <workItem from="1663441426644" duration="1340000" />
+      <workItem from="1663441426644" duration="12018000" />
+      <workItem from="1663487341453" duration="8902000" />
+      <workItem from="1663531321451" duration="12893000" />
+      <workItem from="1663570931937" duration="18000" />
+      <workItem from="1663571439876" duration="1729000" />
+      <workItem from="1663586541421" duration="703000" />
+      <workItem from="1663588344324" duration="1000" />
+      <workItem from="1663588374630" duration="6864000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1661325340240</created>
@@ -281,7 +286,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663353453796</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="update to codes">
+      <created>1663442794212</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1663442794212</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
