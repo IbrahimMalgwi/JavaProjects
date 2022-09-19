@@ -47,11 +47,20 @@ public class CreditCard {
     public static long sumOfOddPlaceDigit(String cardNumber) {
         long sum = 0;
         String value = "";
-        for (int i = cardNumber.length() - 1; i >= 0; i--) {
+        for (int i = cardNumber.length() - 1; i >= 0; i-=2) {
             value = String.valueOf(cardNumber.charAt(i));
             long result = Long.parseLong(value);
             sum += result;
         }
         return sum;
+    }
+
+    public static long add(String cardNumber){
+        return sumOfOddPlaceDigit(cardNumber) + sumOfDoubleEvenDigit(cardNumber);
+    }
+
+    public static boolean isValidCreditCard(String cardNumber) {
+        if (add(cardNumber) % 10 == 0 ) return true;
+        throw new InvalidCreditCardNumberException("Credit Card is invalid");
     }
 }

@@ -59,5 +59,20 @@ class CreditCardTest {
         assertEquals(38, CreditCard.sumOfOddPlaceDigit(cardNumber));
     }
 
+    @Test
+    void add_SumOfOddPlace_And_EvenPlaceResultTest(){
+        String cardNumber = "4388576018402626";
+        assertEquals(75, CreditCard.add(cardNumber));
+    }
+
+    @Test
+    void creditCardValidityTest(){
+        String cardNumber = "4388576018410707";
+        boolean isValidCreditCard = CreditCard.isValidCreditCard(cardNumber);
+        assertTrue(isValidCreditCard);
+    }
+
+
+
 
 }
