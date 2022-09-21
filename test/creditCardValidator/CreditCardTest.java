@@ -7,14 +7,9 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class CreditCardTest {
-//    private CreditCard creditCard;
-//    @BeforeEach
-//    void setUp() {
-//        creditCard = new CreditCard();
-//    }
 
     @Test
-    void creditCardIsValidTest(){
+    void testIfCreditCardNumberLengthIsValid(){
         boolean isValid = CreditCard.isValidLength("45673452678988");
         assertTrue(isValid);
     }

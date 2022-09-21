@@ -5,7 +5,7 @@ public class CreditCard {
     public static boolean isValidLength(String cardNumber) {
         boolean isValid = cardNumber.length() >= 13 && cardNumber.length() <= 16;
         if (isValid) return true;
-        throw new CreditCardLengthException("Credit care length must be between 13 to 16 digit");
+        throw new CreditCardLengthException("Credit card length must be between 13 to 16 digit");
 
     }
 

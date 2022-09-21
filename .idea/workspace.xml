@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b579a713-7788-4ba3-a0d7-d7d5c2c9ec60" name="Changes" comment="update to codes">
-      <change afterPath="$PROJECT_DIR$/src/creditCardValidator/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/creditCardValidator/CreditCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/creditCardValidator/CreditCard.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/creditCardValidator/CreditCardTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/creditCardValidator/CreditCardTest.java" afterDir="false" />
@@ -76,7 +75,7 @@
       <recent name="television" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="JUnit.CreditCardTest">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="creditCardValidator.Main" />
       <module name="javaProjects" />
@@ -155,8 +154,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.CreditCardTest" />
+        <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.CreditCardTest.creditCardValidityTest" />
         <item itemvalue="JUnit.CreditCardTest.add_SumOfOddPlace_And_EvenPlaceResultTest" />
         <item itemvalue="JUnit.CreditCardTest.sumOfOddPlaceDigitTest" />
@@ -217,7 +216,10 @@
       <workItem from="1663586541421" duration="703000" />
       <workItem from="1663588344324" duration="1000" />
       <workItem from="1663588374630" duration="12157000" />
-      <workItem from="1663622240450" duration="8469000" />
+      <workItem from="1663622240450" duration="10417000" />
+      <workItem from="1663658440998" duration="1779000" />
+      <workItem from="1663690552256" duration="1186000" />
+      <workItem from="1663745501053" duration="598000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1661325340240</created>
@@ -324,7 +326,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663627768308</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="update to codes">
+      <created>1663631536174</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1663631536174</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
