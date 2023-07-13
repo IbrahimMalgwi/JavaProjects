@@ -9,24 +9,24 @@ import static org.junit.jupiter.api.Assertions.*;
 class CreditCardTest {
 
     @Test
-    void testIfCreditCardNumberLengthIsValid(){
+    void testIfCreditCardLengthIsValid(){
         boolean isValid = CreditCard.isValidLength("45673452678988");
         assertTrue(isValid);
     }
 
     @Test
-    void trowExceptionForInvalidCardNumberLengthTest(){
+    void testExceptionThrownForInvalidCardLength(){
         assertThrows(CreditCardLengthException.class, ()-> CreditCard.isValidLength("23456789"));
     }
 
     @Test
-    void trowInvalidCreditCardNumberExceptionTest(){
+    void testThrownExceptionForInvalidCreditCard(){
         assertThrows(InvalidCreditCardNumberException.class, ()->CreditCard.isValidNumber("89096754531234674"));
     }
 
     @Test
-    @DisplayName("Test for start with 4, 5, 6 and 37")
-    void creditCardNumberIsAValidTest(){
+    @DisplayName("Test credit card begins with 4, 5, 6 or 37")
+    void testCreditCardBeginsWith(){
         boolean isValidNumber = CreditCard.isValidNumber("4567456734524178");
         assertTrue(isValidNumber);
 
